@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #d4af37;
+    --gold-light: #f6e05e;
+    --emerald-dark: #061a14;
+    --emerald-deep: #0a2920;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-rozha {
+  font-family: 'Rozha One', serif;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fce084 0%, #d4af37 50%, #aa8014 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-glow {
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f6e05e 0%, #d4af37 50%, #b8860b 100%);
+}
+
+.bg-gold-metallic {
+  background: linear-gradient(135deg, #dfba4f 0%, #fad97c 35%, #b5881e 70%, #d4af37 100%);
+}
+
+.border-gold-glow {
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.bg-radial-vignette {
+  background: radial-gradient(circle at 50% 20%, rgba(20, 60, 45, 0.45) 0%, rgba(7, 19, 14, 0.95) 75%, #050e0a 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #061a14;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a5a48;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
